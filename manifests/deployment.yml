@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: paguptaptcpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: paguptaptcpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: paguptaptcpipelinesjavascriptdocker 
+          image: pavicontainerreg.azurecr.io/paguptaptcpipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
